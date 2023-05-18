@@ -13,40 +13,97 @@
 
     <title>Buscador...</title>
   </head>
-  <body style="background-color: #404040;">
+  <body style="background-colorv: #404040;">
 
-    <div class="container text-center">
-        <div class="mt-5">
-            <form action="detalle_parkeo.php" method="post">
-                <img src="parkeo.png" class="img-fluid" style="max-width: 200px;"> 
-                <h2 class="text-white mb-5">Parkeo Info</h2>
-                <h2 class="text-white">Ingrese su número</h2>
-                <input class="form-control border border-warning" type="text" name="codigo" id="codigo">
-                <input type="button" value="Buscar" class="btn btn-primary btn-lg mt-3 ">
-            </form>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Parkeo App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Administrar Estacionamientos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Clientes de Estacionamientos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">Bienvenido a Parkeo App</h1>
+        <p class="lead">Una solución completa para administrar estacionamientos y ofrecer una mejor experiencia a los clientes.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Registrate</a>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Para Administradores de Estacionamientos</h2>
+          <ul>
+            <li>Administra tus espacios de estacionamiento de manera más efectiva</li>
+            <li>Ofrece descuentos y promociones para aumentar la ocupación</li>
+            <li>Recibe comentarios y sugerencias de los clientes en tiempo real</li>
+          </ul>
         </div>
-        
-    </div>  
+        <div class="col-md-6">
+          <h2>Para Clientes de Estacionamientos</h2>
+          <ul>
+            <li>Encuentra y reserva espacios de estacionamientos con facilidad</li>
+<li>Ahorra tiempo y dinero con nuestras ofertas y promociones</li>
+<li>Califica y da tu opinión sobre los estacionamientos para ayudar a otros usuarios</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>¿Necesitas Ayuda?</h2>
+      <p>No dudes en ponerte en contacto con nosotros para cualquier pregunta o problema que tengas.</p>
+      <ul>
+        <li>Teléfono: 123-456-7890</li>
+        <li>Email: info@parkeoapp.com</li>
+        <li>Dirección: 123 Main Street, Anytown USA</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h2>Boletín de Noticias</h2>
+      <p>Suscríbete a nuestro boletín de noticias para recibir las últimas actualizaciones y ofertas especiales.</p>
+      <form>
+        <div class="form-group">
+          <label for="emailInput">Ingresa tu correo electrónico:</label>
+          <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="example@domain.com">
+          <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico con terceros.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Suscribirse</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+  <footer>
+    <div class="container">
+      <p>Parkeo App &copy; 2023</p>
+    </div>
+  </footer>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi4h9Tp" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <footer class="text-center">
-        <a href="" class="text-white">By: MeDevSolutions.com</a></footer>
-
-    <style>
-        footer {
-  position: fixed;
-  left: 0;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-  footer {
-    font-size: 12px;
-  }
-}
-    </style>
   </body>
 </html>

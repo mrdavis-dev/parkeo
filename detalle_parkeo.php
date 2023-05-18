@@ -31,7 +31,7 @@
 <body style="background-color: #ecb41b; font-family: 'Rubik', sans-serif;">
 
     <div class="container">
-		<div class="row justify-content-center align-items-center" style="height: 80vh;">
+		<div class="row justify-content-center align-items-center" style="height: 40vh;">
 			<div class="col-12 text-center">
                 <img src="parkeo.png" class="img-fluid" style="max-width: 200px;"><br><br>
 				<?php 
